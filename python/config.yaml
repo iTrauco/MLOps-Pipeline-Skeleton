@@ -1,0 +1,6 @@
+ServBiz:
+  google_credentials_file: credentials.json
+  google_spreadsheet_key: 1ETXNPRMjKcsbIdKAziQNuG1Llo_T5U3ayzO1ugiW9_o
+  raw_datafile: https://raw.githubusercontent.com/theventurecity/data-toolkit/master/data/ServBiz_transactions.csv
+SmileCo:
+  raw_datafile: https://raw.githubusercontent.com/theventurecity/data-toolkit/master/data/SmileCo_transactions.csv
