@@ -1,3 +1,9 @@
 .ipynb_checkpoints/
 
 venv
+
+credentials.json
+
+*.json
+
+
