@@ -25,6 +25,7 @@ import numpy as np
 import os
 from contextlib import redirect_stdout
 import io
+import sys
 
 # gcp df cx apiu direct
 # import google-cloud-dialogflow-cx
@@ -109,20 +110,21 @@ class Intents:
             print(response)
 
     def create_intents_df():
-        os.system("python3 -c 'from bc_transform import list_intents; print(bc_transform.Intents.list_intents())' > intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
+        import sys
+        # intents to stdout f named intents
+        sys.stdout = open("intents", "wt")
+
+        # print objects
+        print(bc_transform.Intents.list_intents())  
+
+        # etl for output into g-sheets
+        os.system("cat intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
 
         df = pd.read_csv('intents.csv', on_bad_lines='skip')
+        
         return df
 
-    
-    # def create_intents_df():
-    #     # os.system("python3 -c 'from bc_transform import list_intents; print(list_intents())' | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
-    
-    #     df = pd.read_csv('intents.csv', on_bad_lines='skip')
-    #     return df
-    
-
-
+  
 
 
 
