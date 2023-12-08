@@ -80,31 +80,33 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds_path
 ################################################
 ################################################
 ################################################
-# LIST ALL INTENTS
+# List and create intents dataframe
 
 class Intents:
+"""
+Class to list all intents and create df from standout as csv for load
+"""
+    def list_intents():
+        # Create a client
+        client = dialogflowcx_v3.IntentsClient()
     
-def list_intents():
-    # Create a client
-    client = dialogflowcx_v3.IntentsClient()
-
-    # Initialize request argument(s)
-    request = dialogflowcx_v3.ListIntentsRequest(
-        parent=parent_value,
-    )
-
-    # Make the request
-    page_result = client.list_intents(request=request)
-
-    # Handle the response
-    for response in page_result:
-        print(response)
-
-def create_intents_df():
-    os.system("python3 -c 'from bc_transform import list_intents; print(list_intents())' | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
-
-    df = pd.read_csv('intents.csv', on_bad_lines='skip')
-    return df
+        # Initialize request argument(s)
+        request = dialogflowcx_v3.ListIntentsRequest(
+            parent=parent_value,
+        )
+    
+        # Make the request
+        page_result = client.list_intents(request=request)
+    
+        # Handle the response
+        for response in page_result:
+            print(response)
+    
+    def create_intents_df():
+        os.system("python3 -c 'from bc_transform import list_intents; print(list_intents())' | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
+    
+        df = pd.read_csv('intents.csv', on_bad_lines='skip')
+        return df
     
 
 
