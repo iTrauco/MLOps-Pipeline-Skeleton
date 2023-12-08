@@ -109,7 +109,7 @@ class Intents:
             print(response)
 
     def create_intents_df():
-        os.system("python3 -c 'import bc_transform; print(bc_transform.Intents.list_intents())' > intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
+        os.system("python3 -c 'from bc_transform import list_intents; print(bc_transform.Intents.list_intents())' > intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
 
         df = pd.read_csv('intents.csv', on_bad_lines='skip')
         return df
