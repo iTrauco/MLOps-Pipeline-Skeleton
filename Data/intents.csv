@@ -250,3 +250,16 @@ text: X
 repeat_count: 1
 priority: 1
 None
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/intents/00000000-0000-0000-0000-000000000000
+0                         display_name: Default Intent                                                                                  
+1                                    training_phrases                                                                                   
+2                                               parts                                                                                   
+3                                           text: PCP)                                                                                  
+4                                      repeat_count: 1                                                                                  
+..                                                 ...                                                                                  
+246                                             parts                                                                                   
+247                                            text: X                                                                                  
+248                                    repeat_count: 1                                                                                  
+249                                        priority: 1                                                                                  
+250                                               None                                                                                  
+[251 rows x 1 columns]
