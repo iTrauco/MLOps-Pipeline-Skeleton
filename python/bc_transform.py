@@ -112,15 +112,15 @@ class Intents:
     def create_intents_df():
         import sys
         # intents to stdout f named intents
-        sys.stdout = open("intents", "wt")
+        sys.stdout = open("/Users/christophertrauco/skeleton/Data/intents", "wt")
 
         # print objects
-        print(self.list_intents())  
+        print(Intents.list_intents())  
 
         # etl for output into g-sheets
-        os.system("cat intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > intents.csv")
+        print(os.system("cat /Users/christophertrauco/skeleton/Data/intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > /Users/christophertrauco/skeleton/Data/intents.csv"))
 
-        df = pd.read_csv('intents.csv', on_bad_lines='skip')
+        df = pd.read_csv('/Users/christophertrauco/skeleton/Data/intents.csv', on_bad_lines='skip')
         
         return df
 
