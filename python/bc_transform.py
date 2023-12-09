@@ -118,7 +118,7 @@ class Intents:
         print(Intents.list_intents())  
 
         # etl for output into g-sheets
-        print(os.system("cat /Users/christophertrauco/skeleton/Data/intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > /Users/christophertrauco/skeleton/Data/intents.csv"))
+        # print(os.system("cat /Users/christophertrauco/skeleton/Data/intents | tr -d '\"' | tr -d '{' | tr -d '}' | awk '{ if($0 !~ /^[[:space:]]*$/) print $0 }'  | sed 's/^ *//g' > /Users/christophertrauco/skeleton/Data/intents.csv"))
 
         df = pd.read_csv('/Users/christophertrauco/skeleton/Data/intents.csv', on_bad_lines='skip')
         

@@ -363,4 +363,17 @@ training_phrases {
 priority: 1
 
 None
-0
+    name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/intents/00000000-0000-0000-0000-000000000000
+0                         display_name: Default Intent                                                                                  
+1                                    training_phrases                                                                                   
+2                                               parts                                                                                   
+3                                           text: PCP)                                                                                  
+4                                      repeat_count: 1                                                                                  
+..                                                 ...                                                                                  
+259  247                                           ...                                                                                  
+260  248                                    repeat_...                                                                                  
+261  249                                        pri...                                                                                  
+262  250                                           ...                                                                                  
+263                             [251 rows x 1 columns]                                                                                  
+
+[264 rows x 1 columns]
