@@ -1,106 +1,107 @@
-name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/03f8408c-5903-4d5b-b26f-80aa086b4244
-display_name: Album
-kind: KIND_MAP
-entities
-value: Live
-synonyms: Live
-
-entities
-value: Greatest Hits
-synonyms: Hits
-
-enable_fuzzy_extraction: true
-redact: true
-
-name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/1b9eebcc-8d32-448e-9be9-bb48756d0255
-display_name: OrderNumber
-kind: KIND_REGEXP
-entities
-value: A-Z40-93
-synonyms: A-Z40-93
-
-
-name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/69f3ad9c-a374-4cd5-b29f-a7eddf5aa1ba
-display_name: Merch
-kind: KIND_MAP
-entities
-value: T-shirt
-synonyms: T-shirt
-
-entities
-value: Longsleeve
-synonyms: Longsleeve Shirt
-
-entities
-value: Tour Movie
-synonyms: Tour Movie
-
-entities
-value: Digital Album
-synonyms: MP3 Album
-synonyms: MP3
-
-entities
-value: CD
-synonyms: Disc
-synonyms: Physical CD
-
-
-name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/6b91549a-2045-4bc1-82a2-245cb9a12c6e
-display_name: ShirtSize
-kind: KIND_MAP
-entities
-value: XS
-synonyms: Extra Small
-
-entities
-value: S
-synonyms: Small
-
-entities
-value: M
-synonyms: Medium
-
-entities
-value: L
-synonyms: Large
-
-entities
-value: XL
-synonyms: Extra Large
-
-entities
-value: 2XL
-synonyms: Extra Extra Large
-
-enable_fuzzy_extraction: true
-redact: true
-
-name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/ea14364a-4182-449b-9a6e-a7b67d90b26b
-display_name: Artist
-kind: KIND_MAP
-entities
-value: The Google Dolls
-synonyms: Google Dolls
-
-entities
-value: The Goo Fighters
-synonyms: Goo Fighters
-
-entities
-value: G\'s N\' Roses
-synonyms: Alice Googler
-
-enable_fuzzy_extraction: true
-redact: true
-
-name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/f39973d9-4004-43f5-83c7-f2add158ebc5
-display_name: Artist_Aliases
-kind: KIND_MAP
-entities
-value: Artist
-synonyms: musicians
-synonyms: bands
-synonyms: singers
-synonyms: groups
-
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/03f8408c-5903-4d5b-b26f-80aa086b4244,
+display_name: Album,
+kind: KIND_MAP,
+entities,
+value: Live,
+synonyms: Live,
+,
+entities,
+value: Greatest Hits,
+synonyms: Hits,
+,
+enable_fuzzy_extraction: true,
+redact: true,
+,
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/1b9eebcc-8d32-448e-9be9-bb48756d0255,
+display_name: OrderNumber,
+kind: KIND_REGEXP,
+entities,
+value: A-Z40-93,
+synonyms: A-Z40-93,
+,
+,
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/69f3ad9c-a374-4cd5-b29f-a7eddf5aa1ba,
+display_name: Merch,
+kind: KIND_MAP,
+entities,
+value: T-shirt,
+synonyms: T-shirt,
+,
+entities,
+value: Longsleeve,
+synonyms: Longsleeve Shirt,
+,
+entities,
+value: Tour Movie,
+synonyms: Tour Movie,
+,
+entities,
+value: Digital Album,
+synonyms: MP3 Album,
+synonyms: MP3,
+,
+entities,
+value: CD,
+synonyms: Disc,
+synonyms: Physical CD,
+,
+,
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/6b91549a-2045-4bc1-82a2-245cb9a12c6e,
+display_name: ShirtSize,
+kind: KIND_MAP,
+entities,
+value: XS,
+synonyms: Extra Small,
+,
+entities,
+value: S,
+synonyms: Small,
+,
+entities,
+value: M,
+synonyms: Medium,
+,
+entities,
+value: L,
+synonyms: Large,
+,
+entities,
+value: XL,
+synonyms: Extra Large,
+,
+entities,
+value: 2XL,
+synonyms: Extra Extra Large,
+,
+enable_fuzzy_extraction: true,
+redact: true,
+,
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/ea14364a-4182-449b-9a6e-a7b67d90b26b,
+display_name: Artist,
+kind: KIND_MAP,
+entities,
+value: The Google Dolls,
+synonyms: Google Dolls,
+,
+entities,
+value: The Goo Fighters,
+synonyms: Goo Fighters,
+,
+entities,
+value: G\'s N\' Roses,
+synonyms: Alice Googler,
+,
+enable_fuzzy_extraction: true,
+redact: true,
+,
+name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/f39973d9-4004-43f5-83c7-f2add158ebc5,
+display_name: Artist_Aliases,
+kind: KIND_MAP,
+entities,
+value: Artist,
+synonyms: musicians,
+synonyms: bands,
+synonyms: singers,
+synonyms: groups,
+,
+,

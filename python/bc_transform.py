@@ -128,7 +128,6 @@ class Intents:
 ################################################
 ################################################
 ################################################
-from ETL import clean_file
 
 class EntityTypes:
     """
@@ -168,7 +167,7 @@ class EntityTypes:
         # close_file
 
     def clean_data():
-        from ETL import script
+        from clean_file import clean_file
         clean_file(f'{EntityTypes.path}{EntityTypes.file}',f'{EntityTypes.path}{EntityTypes.file}.csv')
         # file = 'entityTypes'
         # path = '../Data/'
