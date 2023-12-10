@@ -105,31 +105,3 @@ entities {
   synonyms: "groups"
 }
 
-   name: "projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/03f8408c-5903-4d5b-b26f-80aa086b4244"
-0                               display_name: "Album"                                                                                        
-1                                      kind: KIND_MAP                                                                                        
-2                                          entities {                                                                                        
-3                                       value: "Live"                                                                                        
-4                                    synonyms: "Live"                                                                                        
-..                                                ...                                                                                        
-95                              synonyms: "musicians"                                                                                        
-96                                  synonyms: "bands"                                                                                        
-97                                synonyms: "singers"                                                                                        
-98                                 synonyms: "groups"                                                                                        
-99                                                  }                                                                                        
-
-[100 rows x 1 columns]
-   name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/03f8408c-5903-4d5b-b26f-80aa086b4244
-0                                 display_name: Album                                                                                      
-1                                      kind: KIND_MAP                                                                                      
-2                                           entities                                                                                       
-3                                         value: Live                                                                                      
-4                                      synonyms: Live                                                                                      
-..                                                ...                                                                                      
-77                                      value: Artist                                                                                      
-78                                synonyms: musicians                                                                                      
-79                                    synonyms: bands                                                                                      
-80                                  synonyms: singers                                                                                      
-81                                   synonyms: groups                                                                                      
-
-[82 rows x 1 columns]
