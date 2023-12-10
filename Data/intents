@@ -363,17 +363,3 @@ training_phrases {
 priority: 1
 
 None
-    name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/intents/00000000-0000-0000-0000-000000000000
-0                         display_name: Default Intent                                                                                  
-1                                    training_phrases                                                                                   
-2                                               parts                                                                                   
-3                                           text: PCP)                                                                                  
-4                                      repeat_count: 1                                                                                  
-..                                                 ...                                                                                  
-270       0.00s - to python to disable frozen modules.                                                                                  
-271  0.00s - Note: Debugging will proceed. Set PYDE...                                                                                  
-272  Installed kernelspec local-venv-kernel in /Use...                                                                                  
-273                 Processing the Unsegmented segment                                                                                  
-274                     Processing the Channel segment                                                                                  
-
-[275 rows x 1 columns]
