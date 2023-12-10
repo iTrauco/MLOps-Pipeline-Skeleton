@@ -26,6 +26,7 @@ import os
 from contextlib import redirect_stdout
 import io
 import sys
+import subprocess
 
 # gcp df cx apiu direct
 # import google-cloud-dialogflow-cx
@@ -124,17 +125,60 @@ class Intents:
         
         return df
 
-  
+################################################
+################################################
+################################################
 
+class EntityTypes:
+    """
+    This class establishes Dialogflow CX(DFCX) API programmatic functionality for DFCX agent entity types and their value mappings. 
+    """
 
+    # class scope variables
+    file = 'entityTypes'
+    path = '/Users/christophertrauco/skeleton/Data/'
 
+    def __init__(self):
+        self,
+    
+    def list_entity_types():
+        entity_types_list = []
+        # Create a client
+        client = dialogflowcx_v3.EntityTypesClient()
+    
+        # Initialize request argument(s)
+        request = dialogflowcx_v3.ListEntityTypesRequest(
+            parent=parent_value,
+        )
+    
+        # Make the request
+        page_result = client.list_entity_types(request=request)
 
+        # create local file for writing entityTypes as stdout
+        # if file exists it will be overwritten
+        # if file doesn't exist it will be create and written to via stdout
+        sys.stdout = open(f"{EntityTypes.path}{EntityTypes.file}", "wt")
+        
+        # Handle the response
+        # prints to locally created file for etl into csv for output into g-sheets playbooks
+        for response in page_result:
+            print(response)
+        # close_file = sys.stdout.close()
+        # close_file
 
-
-
-
-
-
+    def clean_data():
+        from clean_file import clean_file
+        clean_file(f'{EntityTypes.path}{EntityTypes.file}',f'{EntityTypes.path}{EntityTypes.file}.csv')
+        # file = 'entityTypes'
+        # path = '../Data/'
+        # os.system(f"python3 script.py {path}{file} {path}{file}.csv")
+        
+        # subprocess.run([f"cat {EntityTypes.path}{EntityTypes.file} | tr -d '\"' | tr -d '{{' |  tr -d '}}' | awk '{{ if($0 !~ /^[[:space:]]*$/) print $0 }}' | sed 's/^ *//g'  > {EntityTypes.path}{EntityTypes.file}.csv"] ,shell=True) 
+    
+    def create_df():
+        df = pd.read_csv(f'{EntityTypes.path}{EntityTypes.file}.csv', on_bad_lines='skip')
+        print(df)
+        return df
 
 
 
