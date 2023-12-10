@@ -257,9 +257,23 @@ name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4
 3                                           text: PCP)                                                                                  
 4                                      repeat_count: 1                                                                                  
 ..                                                 ...                                                                                  
-246                                             parts                                                                                   
-247                                            text: X                                                                                  
-248                                    repeat_count: 1                                                                                  
-249                                        priority: 1                                                                                  
-250                                               None                                                                                  
-[251 rows x 1 columns]
+259  260  248                                    re...                                                                                  
+260  261  249                                      ...                                                                                  
+261  262  250                                      ...                                                                                  
+262  263                             [251 rows x 1 ...                                                                                  
+263                             [264 rows x 1 columns]                                                                                  
+[264 rows x 1 columns]
+The autoreload extension is already loaded. To reload it, use:
+%reload_ext autoreload
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Installed kernelspec local-venv-kernel in /Users/christophertrauco/Library/Jupyter/kernels/local-venv-kernel
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Installed kernelspec local-venv-kernel in /Users/christophertrauco/Library/Jupyter/kernels/local-venv-kernel
+Processing the Unsegmented segment
+Processing the Channel segment
