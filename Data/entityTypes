@@ -105,30 +105,3 @@ entities {
   synonyms: "groups"
 }
 
-    name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/entityTypes/03f8408c-5903-4d5b-b26f-80aa086b4244  \
-0                                  display_name: Album                                                                                         
-1                                       kind: KIND_MAP                                                                                         
-2                                             entities                                                                                         
-3                                          value: Live                                                                                         
-4                                       synonyms: Live                                                                                         
-..                                                 ...                                                                                         
-101                                    synonyms: bands                                                                                         
-102                                  synonyms: singers                                                                                         
-103                                   synonyms: groups                                                                                         
-104                                                NaN                                                                                         
-105                                                NaN                                                                                         
-
-     Unnamed: 1  
-0           NaN  
-1           NaN  
-2           NaN  
-3           NaN  
-4           NaN  
-..          ...  
-101         NaN  
-102         NaN  
-103         NaN  
-104         NaN  
-105         NaN  
-
-[106 rows x 2 columns]
