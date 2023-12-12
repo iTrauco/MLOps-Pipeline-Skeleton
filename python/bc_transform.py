@@ -128,6 +128,13 @@ class Intents:
 ################################################
 ################################################
 ################################################
+# from clean_file import clean_file
+# import clean_file
+import os
+import sys
+module_path = os.path.abspath(os.path.join('/clean_file')) # or the path to your source code
+sys.path.insert(0, module_path)
+from python import clean_file
 
 class EntityTypes:
     """
@@ -166,16 +173,24 @@ class EntityTypes:
         # close_file = sys.stdout.close()
         # close_file
 
-    def clean_data():
-        from clean_file import clean_file
-        clean_file(f'{EntityTypes.path}{EntityTypes.file}',f'{EntityTypes.path}{EntityTypes.file}.csv')
-        # file = 'entityTypes'
-        # path = '../Data/'
-        # os.system(f"python3 script.py {path}{file} {path}{file}.csv")
+    # def clean_data():
+    #     from clean_file import clean_file
+    #     clean_file(f'{EntityTypes.path}{EntityTypes.file}',f'{EntityTypes.path}{EntityTypes.file}.csv')
+    #     # file = 'entityTypes'
+    #     # path = '../Data/'
+    #     # os.system(f"python3 script.py {path}{file} {path}{file}.csv")
         
-        # subprocess.run([f"cat {EntityTypes.path}{EntityTypes.file} | tr -d '\"' | tr -d '{{' |  tr -d '}}' | awk '{{ if($0 !~ /^[[:space:]]*$/) print $0 }}' | sed 's/^ *//g'  > {EntityTypes.path}{EntityTypes.file}.csv"] ,shell=True) 
+    #     # subprocess.run([f"cat {EntityTypes.path}{EntityTypes.file} | tr -d '\"' | tr -d '{{' |  tr -d '}}' | awk '{{ if($0 !~ /^[[:space:]]*$/) print $0 }}' | sed 's/^ *//g'  > {EntityTypes.path}{EntityTypes.file}.csv"] ,shell=True) 
     
     def create_df():
+        # file = 'entityTypes'
+        # path = '/Users/christophertrauco/skeleton/Data/'
+        # import os
+        # import sys
+        # module_path = os.path.abspath(os.path.join('../scripts/clean_file')) # or the path to your source code
+        # sys.path.insert(0, module_path)
+        # from python import clean_file
+        # clean_file.clean_file(f'{EntityTypes.path}{EntityTypes.file}',f'{EntityTypes.path}{EntityTypes.file}.csv')
         df = pd.read_csv(f'{EntityTypes.path}{EntityTypes.file}.csv', on_bad_lines='skip')
         print(df)
         return df
