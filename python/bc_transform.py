@@ -350,7 +350,55 @@ class TransitionRouteGroups:
 
 
 
+################################################
+################################################
+################################################
+# Agent Flow Webhooks
+from google.cloud import dialogflowcx_v3beta1
+class Webhooks:
+    """
+    This class establishes Dialogflow CX(DFCX) API programmatic functionality for DFCX agent flows page transition routes...
+    
+    """
+    # class scope variables
+    file = 'webhooks'
+    path = '/Users/christophertrauco/skeleton/Data/'
 
+    def __init__(self):
+        self,
+
+    def list_webhooks():
+        # Create a client
+        client = dialogflowcx_v3.WebhooksClient()
+    
+        # Initialize request argument(s)
+        request = dialogflowcx_v3.ListWebhooksRequest(
+            parent=parent_value,
+        )
+    
+        # Make the request
+        page_result = client.list_webhooks(request=request)
+
+
+        sys.stdout = open(f"{Webhooks.path}{Webhooks.file}", "wt")
+
+        # Handle the response
+        for response in page_result:
+            print(response)
+        print('Place holder for webhook output...')
+        print('Testing...')
+
+
+    def clean_data():
+        from python import clean_file
+        clean_file.clean_file(f'{Webhooks.path}{Webhooks.file}',f'{Webhooks.path}{Webhooks.file}.csv')
+
+    def create_df():
+        df = pd.read_csv(f'{Webhooks.path}{Webhooks.file}.csv',on_bad_lines='skip')
+        print(df)
+        return df
+
+        
 
 
 
