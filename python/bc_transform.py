@@ -250,6 +250,52 @@ class Flows:
         return df
 
         
+################################################
+################################################
+################################################
+# PAGES
+
+flow_pages = sh.worksheet('Main').acell('B17').value
+class Pages:
+    """
+    This class establishes Dialogflow CX(DFCX) API programmatic functionality for DFCX agent flows and their page transition route mappings...
+    
+    """
+    # class scope variables
+    file = 'pages'
+    path = '/Users/christophertrauco/skeleton/Data/'
+
+    def __init__(self):
+        self,
+
+    def list_pages():
+        # Create a client
+        client = dialogflowcx_v3.PagesClient()
+    
+        # Initialize request argument(s)
+        request = dialogflowcx_v3.ListPagesRequest(
+            parent=flow_pages,
+        )
+    
+        # Make the request
+        page_result = client.list_pages(request=request)
+
+        sys.stdout = open(f"{Pages.path}{Pages.file}", "wt")
+        
+        # Handle the response
+        for response in page_result:
+            print(response)
+
+
+    def clean_data():
+        from python import clean_file
+        clean_file.clean_file(f'{Pages.path}{Pages.file}',f'{Pages.path}{Pages.file}.csv')
+
+    def create_df():
+        df = pd.read_csv(f'{Pages.path}{Pages.file}.csv', on_bad_lines='skip')
+        print(df)
+        return df
+
 
 
 
