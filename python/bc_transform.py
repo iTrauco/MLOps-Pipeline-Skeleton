@@ -174,6 +174,7 @@ class EntityTypes:
         # close_file
 
     # def clean_data():
+        
     #     from clean_file import clean_file
     #     clean_file(f'{EntityTypes.path}{EntityTypes.file}',f'{EntityTypes.path}{EntityTypes.file}.csv')
     #     # file = 'entityTypes'
