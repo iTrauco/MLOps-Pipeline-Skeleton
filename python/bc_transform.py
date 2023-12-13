@@ -298,9 +298,54 @@ class Pages:
 
 
 
+################################################
+################################################
+################################################
+# Transition Route Groups
+from google.cloud import dialogflowcx_v3beta1
+class TransitionRouteGroups:
+    """
+    This class establishes Dialogflow CX(DFCX) API programmatic functionality for DFCX agent flows page transition routes...
+    
+    """
+    # class scope variables
+    file = 'transition_route_groups'
+    path = '/Users/christophertrauco/skeleton/Data/'
+
+    def __init__(self):
+        self,
+
+    def list_transition_route_groups():
+        # Create a client
+        client = dialogflowcx_v3beta1.TransitionRouteGroupsClient()
+    
+        # Initialize request argument(s)
+        request = dialogflowcx_v3beta1.ListTransitionRouteGroupsRequest(
+            parent=parent_value,
+        )
+    
+        # Make the request
+        page_result = client.list_transition_route_groups(request=request)
+
+        # create local file for writing entityTypes as stdout
+        # if file exists it will be overwritten
+        # if file doesn't exist it will be create and written to via stdout
+        sys.stdout = open(f"{TransitionRouteGroups.path}{TransitionRouteGroups.file}", "wt")
+    
+        # Handle the response
+        for response in page_result:
+            print(response)
+        print('Testing output...')
 
 
+    def clean_data():
+        from python import clean_file
+        clean_file.clean_file(f'{TransitionRouteGroups.path}{TransitionRouteGroups.file}',f'{TransitionRouteGroups.path}{TransitionRouteGroups.file}.csv')
 
+    def create_df():
+        df = pd.read_csv(f'{TransitionRouteGroups.path}{TransitionRouteGroups.file}.csv', on_bad_lines='skip')
+        print(df)
+        return df
 
 
 
