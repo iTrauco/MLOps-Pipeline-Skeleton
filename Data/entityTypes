@@ -112,11 +112,11 @@ entities {
 3                                          value: Live                                                                                         
 4                                       synonyms: Live                                                                                         
 ..                                                 ...                                                                                         
-101                                    synonyms: bands                                                                                         
-102                                  synonyms: singers                                                                                         
-103                                   synonyms: groups                                                                                         
-104                                                NaN                                                                                         
-105                                                NaN                                                                                         
+130                                    132         NaN                                                                                         
+131                                                NaN                                                                                         
+132                               133 rows x 2 columns                                                                                         
+133                 Processing the Unsegmented segment                                                                                         
+134                    Processing the Agent -  segment                                                                                         
 
      Unnamed: 1  
 0           NaN  
@@ -125,10 +125,37 @@ entities {
 3           NaN  
 4           NaN  
 ..          ...  
-101         NaN  
-102         NaN  
-103         NaN  
-104         NaN  
-105         NaN  
+130         NaN  
+131         NaN  
+132         NaN  
+133         NaN  
+134         NaN  
 
-[106 rows x 2 columns]
+[135 rows x 2 columns]
+    name: projects/bot1-404120/locations/global/agents/79c5a35e-32a9-403b-ad36-d24f4f7d5d67/flows/00000000-0000-0000-0000-000000000000  \
+0                     display_name: Default Start Flow                                                                                   
+1    description: A start flow created along with t...                                                                                   
+2                                    transition_routes                                                                                   
+3           name: 552e9f0c-62c7-45e5-9562-e56695c942ed                                                                                   
+4    intent: projects/bot1-404120/locations/global/...                                                                                   
+..                                                 ...                                                                                   
+362                                       nlu_settings                                                                                   
+363                    model_type: MODEL_TYPE_STANDARD                                                                                   
+364                      classification_threshold: 0.3                                                                                   
+365                                                NaN                                                                                   
+366                                                NaN                                                                                   
+
+     Unnamed: 1  
+0           NaN  
+1           NaN  
+2           NaN  
+3           NaN  
+4           NaN  
+..          ...  
+362         NaN  
+363         NaN  
+364         NaN  
+365         NaN  
+366         NaN  
+
+[367 rows x 2 columns]
